@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #130812;
+    color: #f9edf4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background: rgba(19, 8, 18, 0.94);
+    border-bottom: 1px solid rgba(255, 180, 218, 0.18);
+}
+
+.navbar-brand {
+    color: #ff9dcc !important;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f7d7e7;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active > .nav-link {
+    color: #ffc75f;
+}
+
+.carousel-item {
+    min-height: 640px;
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 78% 20%, rgba(255, 157, 204, 0.36), transparent 28%),
+        radial-gradient(circle at 15% 75%, rgba(255, 199, 95, 0.18), transparent 26%),
+        linear-gradient(90deg, rgba(19, 8, 18, 0.92), rgba(61, 19, 47, 0.66));
+}
+
+.slide-one {
+    background:
+        linear-gradient(135deg, #2a0d21, #5d183f 55%, #130812);
+}
+
+.slide-two {
+    background:
+        linear-gradient(135deg, #130812, #44142f 45%, #9c2f62);
+}
+
+.slide-three {
+    background:
+        linear-gradient(135deg, #25081c, #6f224e 52%, #160b20);
+}
+
+.carousel-caption {
+    right: auto;
+    bottom: auto;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 590px;
+    text-align: left;
+}
+
+.carousel-caption h1 {
+    font-size: 58px;
+    line-height: 1.05;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+}
+
+.eyebrow {
+    color: #ffc75f;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.btn-glow {
+    background: #ff6fae;
+    color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    padding: 12px 28px;
+    font-weight: 700;
+    box-shadow: 0 10px 26px rgba(255, 111, 174, 0.32);
+}
+
+.btn-glow:hover {
+    background: #ffc75f;
+    color: #2a0d21;
+}
+
+h2 {
+    color: #fff7fb;
+    font-weight: 800;
+}
+
+.product-card {
+    background: #22101f;
+    color: #f9edf4;
+    border: 1px solid rgba(255, 180, 218, 0.16);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+}
+
+.product-art {
+    min-height: 190px;
+    position: relative;
+}
+
+.product-art::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 94px;
+    height: 126px;
+    border-radius: 42px 42px 12px 12px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 247, 251, 0.92);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.25);
+}
+
+.lipstick {
+    background:
+        linear-gradient(135deg, rgba(255, 111, 174, 0.7), rgba(42, 13, 33, 0.95)),
+        repeating-linear-gradient(45deg, #3c132d 0 18px, #4f1738 18px 36px);
+}
+
+.perfume {
+    background:
+        linear-gradient(135deg, rgba(255, 199, 95, 0.55), rgba(42, 13, 33, 0.95)),
+        repeating-linear-gradient(45deg, #2a0d21 0 18px, #5d183f 18px 36px);
+}
+
+.skincare {
+    background:
+        linear-gradient(135deg, rgba(214, 127, 255, 0.5), rgba(42, 13, 33, 0.95)),
+        repeating-linear-gradient(45deg, #21102c 0 18px, #4a1c55 18px 36px);
+}
+
+.card-title {
+    color: #ffb4da;
+    font-weight: 700;
+}
+
+.price {
+    display: inline-block;
+    margin-top: 8px;
+    color: #ffc75f;
+    font-weight: 800;
+}
+
+.offer-section {
+    background: #2a0d21;
+    border-top: 1px solid rgba(255, 180, 218, 0.14);
+    border-bottom: 1px solid rgba(255, 180, 218, 0.14);
+}
+
+.offer-section p {
+    color: #f7d7e7;
+}
+
+.discount-box {
+    background: linear-gradient(135deg, #ff6fae, #5d183f);
+    border-radius: 8px;
+    padding: 36px 28px;
+    text-align: center;
+    box-shadow: 0 18px 46px rgba(255, 111, 174, 0.22);
+}
+
+.discount-box span {
+    display: block;
+    color: white;
+    font-size: 76px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.discount-box p {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0 22px;
+}
+
+.order-form {
+    max-width: 720px;
+    background: #22101f;
+    border: 1px solid rgba(255, 180, 218, 0.16);
+    border-radius: 8px;
+    padding: 26px;
+}
+
+.form-control {
+    background: #130812;
+    border: 1px solid rgba(255, 180, 218, 0.22);
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    background: #130812;
+    border-color: #ff9dcc;
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(255, 111, 174, 0.2);
+}
+
+.form-control::placeholder {
+    color: #cda8ba;
+}
+
+footer {
+    background: #0d050c;
+    color: #f7d7e7;
+    border-top: 1px solid rgba(255, 180, 218, 0.16);
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        min-height: 580px;
+    }
+
+    .carousel-caption {
+        left: 20px;
+        right: 20px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 38px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
